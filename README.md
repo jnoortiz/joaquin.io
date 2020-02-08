@@ -1,3 +1,3 @@
 # joaquin.io
 
-This is my portfolio! Please check
+Hi! This is a public repo I use to showcase my Angular 8 skills.
