@@ -3,8 +3,9 @@
   "compilerOptions": {
     "baseUrl": "src",
     "paths": {
-      "@environments": ["environments"],
-      "@modules": ["app/modules"]
+      "@data/*": ["assets/data/*"],
+      "@environments/*": ["environments/*"],
+      "@modules/*": ["app/modules/*"]
     },
     "outDir": "./dist/out-tsc",
     "sourceMap": true,

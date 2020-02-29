@@ -1,12 +1,16 @@
 @import 'partials/_variables';
 
 .header {
-  padding-top: 10rem;
+  padding: 5rem 0;
   width: 100%;
   font-family: $font-raleway;
   height: 100vh;
   position: relative;
   box-sizing: border-box;
+  &__particles {
+    height: 100%;
+    width: 100%;
+  }
   &__container {
     position: absolute;
     top: 50%;
