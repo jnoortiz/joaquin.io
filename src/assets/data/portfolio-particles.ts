@@ -1,23 +1,23 @@
 export const particlesConfig = {
   particles: {
     number: {
-      value: 90,
+      value: 120,
       density: {
         enable: true,
-        value_area: 550
+        value_area: 500
       }
     },
     color: {
       value: '#ff9932'
     },
     shape: {
-      type: 'polygon',
+      type: 'circle',
       stroke: {
         width: 0,
         color: '#000000'
       },
       polygon: {
-        nb_sides: 9
+        nb_sides: 6
       },
       image: {
         src: 'img/github.svg',
@@ -54,12 +54,12 @@ export const particlesConfig = {
     },
     move: {
       enable: true,
-      speed: 1,
+      speed: .5,
       direction: 'none',
       random: false,
       straight: false,
-      out_mode: 'out',
-      bounce: false,
+      out_mode: 'bounce',
+      bounce: true,
       attract: {
         enable: false,
         rotateX: 600,
@@ -75,8 +75,8 @@ export const particlesConfig = {
         mode: 'repulse'
       },
       onclick: {
-        enable: false,
-        mode: 'push'
+        enable: true,
+        mode: 'repulse'
       },
       resize: false
     },
@@ -95,8 +95,8 @@ export const particlesConfig = {
         speed: 3
       },
       repulse: {
-        distance: 200,
-        duration: 0.4
+        distance: 100,
+        duration: 0.5
       },
       push: {
         particles_nb: 4
