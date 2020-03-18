@@ -1,7 +1,7 @@
 export const particlesConfig = {
   particles: {
     number: {
-      value: 120,
+      value: 85,
       density: {
         enable: true,
         value_area: 500
@@ -78,7 +78,7 @@ export const particlesConfig = {
         enable: true,
         mode: 'repulse'
       },
-      resize: false
+      resize: true
     },
     modes: {
       grab: {

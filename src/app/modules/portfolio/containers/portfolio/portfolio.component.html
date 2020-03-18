@@ -4,18 +4,18 @@
 <!-- main header -->
 <div class="container">
   <div class="row">
-    <div class="twelve column">
+    <div class="twelve columns">
       <div class="header">
         <div id="particles-js" class="header__particles"></div>
         <div class="header__container">
           <p class="header__text">
-            Freelance
+            Freelance&nbsp;
           </p>
           <p class="header__text">
-            Web Developer
+            Web Developer&nbsp;
           </p>
           <p class="header__text">
-            For Hire
+            for Hire&nbsp;
           </p>
         </div>
       </div>
@@ -23,11 +23,176 @@
   </div>
 </div>
 
-<!-- profile & skill set -->
+<!-- about me -->
 <div class="container">
   <div class="row">
-    <div class="twelve column">
-      <div class="header">
+    <div class="twelve columns">
+      <div class="section intro section--center">
+        <p>
+          My name is Joaquin and I develop apps with performance in mind; no copy & paste
+          programming here. I'm highly proficient in
+          <span class="intro__highlight">Angular + Node.js</span>, but picking up a new framework or
+          language isn't a problem.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- about me icons -->
+<div class="container">
+  <div class="row">
+    <div class="four columns">
+      <div class="section section--center about-me-card">
+        <span class="about-me-card__icon icon-graduation"></span>
+        <h5 class="about-me-card__title">
+          Experienced
+        </h5>
+        <span class="about-me-card__description">
+          I have a CS degree and over {{ experienceInYears }} years experience as a software
+          developer.
+        </span>
+      </div>
+    </div>
+    <div class="four columns">
+      <div class="section section--center about-me-card">
+        <span class="about-me-card__icon icon-peace"></span>
+        <h5 class="about-me-card__title">
+          Integrity
+        </h5>
+        <span class="about-me-card__description">
+          I understand that all businesses are looking for value; and I strive to make sure that my
+          work will always match your expectations.
+        </span>
+      </div>
+    </div>
+    <div class="four columns">
+      <div class="section section--center about-me-card">
+        <span class="about-me-card__icon icon-tools"></span>
+        <h5 class="about-me-card__title">
+          Craftsman
+        </h5>
+        <span class="about-me-card__description">
+          I'm constantly honing my skills in crafting readable, scalable, and maintainable code.
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="six columns">
+      <div class="section section--center about-me-card">
+        <span class="about-me-card__icon icon-handshake"></span>
+        <h5 class="about-me-card__title">
+          Team Player
+        </h5>
+        <span class="about-me-card__description">
+          I'm a firm believer that the best way to accomplish a task is by establishing a mutual
+          goal, communicating issues openly, and coordinating consistently.
+        </span>
+      </div>
+    </div>
+    <div class="six columns">
+      <div class="section section--center about-me-card">
+        <span class="about-me-card__icon icon-child"></span>
+        <h5 class="about-me-card__title">
+          Growth Mindset
+        </h5>
+        <span class="about-me-card__description">
+          I'm always in a state of learning and improving myself, both as a developer and as a
+          person.
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- key skills -->
+<!-- <div class="container">
+    <div class="row">
+      <div class="twelve column">
+        <div class="section section--center skills">
+          <h5>Skills Table</h5>
+          <table class="u-full-width skills-table">
+            <tbody>
+              <tr>
+                <td class="skills-table__language">TypeScript</td>
+                <td>
+                  <ul>
+                    <li>Angular<span class="icon-star"></span></li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td class="skills-table__language">Javascript</td>
+                <td>
+                  <ul>
+                    <li>Node.js <span class="icon-star"></span></li>
+                    <li>AngularJS</li>
+                    <li>ReactJS</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td class="skills-table__language">DB Administration</td>
+                <td>
+                  <ul>
+                    <li>MongoDB</li>
+                    <li>PL/SQL</li>
+                    <li>MySQL</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td class="skills-table__language">Python</td>
+                <td>
+                  <ul>
+                    <li>Flask</li>
+                    <li>Django</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td class="skills-table__language">PHP</td>
+                <td>
+                  <ul>
+                    <li>Codeigniter</li>
+                    <li>Laravel</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td class="skills-table__language">General</td>
+                <td>
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS <span class="icon-star"></span></li>
+                    <li>SCSS <span class="icon-star"></span></li>
+                    <li>Rest API <span class="icon-star"></span></li>
+                    <li>AGILE/SCRUM</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+      </div> -->
+
+<!-- portfolio -->
+<div class="container">
+  <div class="row">
+    <div class="twelve columns">
+      <div class="section section--center portfolio">
+        <h1 class="section__header">PROJECTS</h1>
+        <ul class="portfolio__tags">
+          <li>Show All</li>
+        </ul>
+        <!-- <ul class="portfolio__projects">
+          <li class="portfolio__project" *ngFor="let project of projects">
+            <img class="portfolio__project__img" [src]="project.imageUrl" />
+          </li>
+        </ul> -->
       </div>
     </div>
   </div>
@@ -35,10 +200,25 @@
 
 <!-- portfolio -->
 <div class="container">
-  <div class="row">
-    <div class="twelve column">
-      <div class="header">
+  <div class="row" *ngFor="let projectsCol of projectsByRow">
+    <div class="four columns" *ngFor="let project of projectsCol">
+      <div class="project" [ngStyle]="{ 'background-color': project.thumb.bgColor }">
+        <img class="project__brand" [src]="project.thumb.brandUrl" />
+        <div class="project__overlay">
+          <div class="project__content">
+            <h1 class="project__name">{{ project.name }}</h1>
+            <h2 class="project__role">{{ project.role }}</h2>
+            <button class="project__button" (click)="openModal(project.id)">View Info</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
+
+<!-- portfolio modal -->
+<app-portfolio-modal
+  [project]="selectedProject"
+  (modalClosed)="onModalClosed()"
+  *ngIf="showModal"
+></app-portfolio-modal>
