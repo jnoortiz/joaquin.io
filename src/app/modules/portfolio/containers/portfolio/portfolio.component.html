@@ -4,7 +4,7 @@
 <!-- main header -->
 <div class="container">
   <div class="row">
-    <div class="twelve columns">
+    <div class="col-sm">
       <div class="header">
         <div id="particles-js" class="header__particles"></div>
         <div class="header__container">
@@ -26,7 +26,7 @@
 <!-- about me -->
 <div class="container">
   <div class="row">
-    <div class="twelve columns">
+    <div class="col-sm">
       <div class="section intro section--center">
         <p>
           My name is Joaquin and I develop apps with performance in mind; no copy & paste
@@ -41,7 +41,7 @@
 <!-- about me icons -->
 <div class="container">
   <div class="row">
-    <div class="four columns">
+    <div class="col-sm-6 col-md-4">
       <div class="section section--center about-me-card">
         <span class="about-me-card__icon icon-graduation"></span>
         <h5 class="about-me-card__title">
@@ -53,7 +53,7 @@
         </span>
       </div>
     </div>
-    <div class="four columns">
+    <div class="col-sm-6 col-md-4">
       <div class="section section--center about-me-card">
         <span class="about-me-card__icon icon-peace"></span>
         <h5 class="about-me-card__title">
@@ -65,7 +65,7 @@
         </span>
       </div>
     </div>
-    <div class="four columns">
+    <div class="col-sm-6 col-md-4">
       <div class="section section--center about-me-card">
         <span class="about-me-card__icon icon-tools"></span>
         <h5 class="about-me-card__title">
@@ -76,10 +76,7 @@
         </span>
       </div>
     </div>
-  </div>
-
-  <div class="row">
-    <div class="six columns">
+    <div class="col-sm-6 col-md-6">
       <div class="section section--center about-me-card">
         <span class="about-me-card__icon icon-handshake"></span>
         <h5 class="about-me-card__title">
@@ -91,7 +88,7 @@
         </span>
       </div>
     </div>
-    <div class="six columns">
+    <div class="col-sm-12 col-md-6">
       <div class="section section--center about-me-card">
         <span class="about-me-card__icon icon-child"></span>
         <h5 class="about-me-card__title">
@@ -182,16 +179,11 @@
 <!-- portfolio -->
 <div class="container">
   <div class="row">
-    <div class="twelve columns">
+    <div class="col-sm">
       <div class="section section--center portfolio">
         <h1 class="section__header">PROJECTS</h1>
-        <ul class="portfolio__tags">
+        <!-- <ul class="portfolio__tags">
           <li>Show All</li>
-        </ul>
-        <!-- <ul class="portfolio__projects">
-          <li class="portfolio__project" *ngFor="let project of projects">
-            <img class="portfolio__project__img" [src]="project.imageUrl" />
-          </li>
         </ul> -->
       </div>
     </div>
@@ -200,19 +192,21 @@
 
 <!-- portfolio -->
 <div class="container">
-  <div class="row" *ngFor="let projectsCol of projectsByRow">
-    <div class="four columns" *ngFor="let project of projectsCol">
-      <div class="project" [ngStyle]="{ 'background-color': project.thumb.bgColor }">
-        <img class="project__brand" [src]="project.thumb.brandUrl" />
-        <div class="project__overlay">
-          <div class="project__content">
-            <h1 class="project__name">{{ project.name }}</h1>
-            <h2 class="project__role">{{ project.role }}</h2>
-            <button class="project__button" (click)="openModal(project.id)">View Info</button>
+  <div class="row">
+    <ng-container *ngFor="let project of projects">
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="project" [ngStyle]="{ 'background-color': project.thumb.bgColor }">
+          <img class="project__brand" [src]="project.thumb.brandUrl" />
+          <div class="project__overlay">
+            <div class="project__content">
+              <h1 class="project__name">{{ project.name }}</h1>
+              <h2 class="project__role">{{ project.role }}</h2>
+              <button class="btn project__button" (click)="openModal(project.id)">View Info</button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </ng-container>
   </div>
 </div>
 

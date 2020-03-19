@@ -13,10 +13,8 @@ declare var particlesJS: any;
   styleUrls: ['./portfolio.component.scss']
 })
 export class PortfolioComponent implements OnInit {
-  private projects: Array<Project>;
-
   experienceInYears: number;
-  projectsByRow: Array<Array<Project>>;
+  projects: Array<Project>;
   selectedProject: Project;
   showModal: boolean;
 
@@ -45,18 +43,7 @@ export class PortfolioComponent implements OnInit {
   private initProjects(): void {
     this.portfolioService.getProjects().subscribe(
       data => {
-        // we save the flattened projects list
         this.projects = data;
-
-        // we divide the array of projects into subarrays of up to 3 projects
-        const projectsByRow = [[]];
-        data.forEach(project => {
-          if (projectsByRow[projectsByRow.length - 1].length === 3) {
-            projectsByRow.push([]);
-          }
-          projectsByRow[projectsByRow.length - 1].push(project);
-        });
-        this.projectsByRow = projectsByRow;
       },
       err => {
         console.error(err);

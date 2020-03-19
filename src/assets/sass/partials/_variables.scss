@@ -1,9 +1,8 @@
 /* breakpoints */
-$bp-mobile    : 400px;
-$bp-phablet   : 550px;
-$bp-tablet    : 750px;
-$bp-desktop   : 1000px;
-$bp-desktophd : 1200px;
+$bp-sm: 576px;
+$bp-md: 768px;
+$bp-lg: 992px;
+$bp-xl: 1200px;
 
 /* fonts */
 $font-roboto: 'Roboto', sans-serif;

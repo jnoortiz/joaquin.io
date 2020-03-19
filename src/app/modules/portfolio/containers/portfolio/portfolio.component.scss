@@ -115,34 +115,8 @@
   }
 }
 
-/* Larger than mobile */
-@media (min-width: $bp-mobile) {
-}
-
-/* Larger than phablet */
-@media (min-width: $bp-phablet) {
-  .project {
-    &__name {
-      font-size: 1.2rem;
-    }
-    &__role {
-      font-size: 1rem;
-      margin-bottom: 2rem;
-    }
-  }
-}
-
-/* Larger than tablet */
-@media (min-width: $bp-tablet) {
-  .project {
-    &__name {
-      font-size: 2rem;
-    }
-    &__role {
-      font-size: 1.2rem;
-      margin-bottom: 3rem;
-    }
-  }
+/* Larger than 576px */
+@media (min-width: $bp-sm) {
   .header {
     &__container {
       text-align: center;
@@ -154,17 +128,39 @@
     }
   }
   .project {
+    &__name {
+      font-size: 1.2rem;
+    }
+    &__role {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+/* Larger than 768px */
+@media (min-width: $bp-md) {
+  .project {
+    &__name {
+      font-size: 2rem;
+    }
+    &__role {
+      font-size: 1.2rem;
+      margin-bottom: 3rem;
+    }
+  }
+  .project {
     margin-bottom: 28px;
   }
 }
 
-/* Larger than desktop */
-@media (min-width: $bp-desktop) {
+/* Larger than 992px */
+@media (min-width: $bp-lg) {
   .project {
     margin-bottom: 38px;
   }
 }
 
-/* Larger than Desktop HD */
-@media (min-width: $bp-desktophd) {
+/* Larger than 1200px */
+@media (min-width: $bp-xl) {
 }
