@@ -1,9 +1,20 @@
-<div class="overlay"></div>
-
-<div class="modal">
-  <div class="modal__header">
-    <span class="modal__close icon-close" (click)="closeModal()"></span>
+<div class="modal-body project">
+  <button type="button" class="project__close close" aria-label="Close" (click)="bsModalRef.hide()">
+    <span class="project__close__icon icon-close"></span>
+  </button>
+  <div class="project__carousel">
+    <carousel [interval]="false">
+      <slide *ngFor="let screenshot of project.screenshotUrls">
+        <img class="project__screenshot" [src]="screenshot" />
+      </slide>
+    </carousel>
   </div>
-  <div class="modal__body">
+  <div class="project__content">
+    <h1 class="project__name">{{ project.name }}</h1>
+    <p class="project__role">{{ project.role }}</p>
+    <ul class="project__tags">
+      <li *ngFor="let tag of project.tagList">{{ tag }}</li>
+    </ul>
+    <p class="project__description">{{ project.description }}</p>
   </div>
 </div>

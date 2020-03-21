@@ -1,4 +1,5 @@
-import { Component, OnInit, Input, Renderer2, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { BsModalRef } from 'ngx-bootstrap/modal';
 import { Project } from '@shared/models/project.model';
 
 @Component({
@@ -7,18 +8,11 @@ import { Project } from '@shared/models/project.model';
   styleUrls: ['./portfolio-modal.component.scss']
 })
 export class PortfolioModalComponent implements OnInit {
-  @Input() project: Project;
-  @Output() modalClosed: EventEmitter<boolean> = new EventEmitter();
+  project: Project;
 
-  constructor(private renderer: Renderer2) {}
+  constructor(public bsModalRef: BsModalRef) {}
 
-  ngOnInit(): void {
-    console.log(this.project.screenshotUrls);
-    this.renderer.addClass(document.body, 'body--modal-open');
-  }
-
-  closeModal(): void {
-    this.renderer.removeClass(document.body, 'body--modal-open');
-    this.modalClosed.emit(true);
+  ngOnInit() {
+    console.log(this.project);
   }
 }

@@ -1,10 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { PortfolioService } from '../../services/portfolio.service';
-
+import { BsModalService } from 'ngx-bootstrap/modal';
 import { Project } from '@shared/models/project.model';
-
 import { particlesConfig } from 'assets/data/portfolio-particles';
-
+import { PortfolioModalComponent } from '../../components/portfolio-modal/portfolio-modal.component';
 declare var particlesJS: any;
 
 @Component({
@@ -15,10 +14,8 @@ declare var particlesJS: any;
 export class PortfolioComponent implements OnInit {
   experienceInYears: number;
   projects: Array<Project>;
-  selectedProject: Project;
-  showModal: boolean;
 
-  constructor(private portfolioService: PortfolioService) {}
+  constructor(private portfolioService: PortfolioService, private modalService: BsModalService) {}
 
   ngOnInit(): void {
     this.initParticles();
@@ -51,14 +48,10 @@ export class PortfolioComponent implements OnInit {
     );
   }
 
-  // TODO: move to shared
-  onModalClosed(): void {
-    this.showModal = false;
-  }
-
-  // TODO: move to shared
   openModal(projectId): void {
-    this.selectedProject = this.projects.find(project => project.id === projectId);
-    this.showModal = true;
+    const initialState = {
+      project: this.projects.find(project => project.id === projectId)
+    };
+    this.modalService.show(PortfolioModalComponent, { initialState }).setClass('modal-lg');
   }
 }
