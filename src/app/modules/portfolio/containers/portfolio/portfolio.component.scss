@@ -25,31 +25,9 @@
   }
 }
 
-.section {
-  margin: 8rem 0;
-  &__header {
-    font-size: 2.5rem;
-    border-bottom: 1px $hex-orange solid;
-    display: inline-block;
-  }
-  &--center {
-    text-align: center;
-  }
-}
-
-.about-me-card {
-  margin: 3rem auto;
-  max-width: 235px;
-  &__icon {
-    margin: 0;
-    font-size: 3rem;
-  }
-  &__title {
-    font-size: 2rem;
-  }
-}
-
 .intro {
+  margin: 8rem 0 7rem;
+  text-align: center;
   &__me {
     overflow: hidden;
     border-radius: 50%;
@@ -63,13 +41,19 @@
   }
 }
 
-.contact {
-
+.about-me-card {
+  text-align: center;
+  margin: 5rem auto;
+  max-width: 235px;
+  &__icon {
+    margin: 0;
+    font-size: 3rem;
+  }
+  &__title {
+    font-size: 2rem;
+  }
 }
 
-.footer {
-  background-color: rgba(0, 0, 0, 0.2);
-}
 /* Larger than 576px */
 @media (min-width: $bp-sm) {
   .header {

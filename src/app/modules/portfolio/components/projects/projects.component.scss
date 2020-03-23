@@ -1,10 +1,13 @@
-@import '../../containers/portfolio/portfolio.component.scss';
 @import 'partials/_variables';
 
-.portfolio {
-  margin-bottom: 4rem;
+.projects {
+  text-align: center;
+  margin: 7.5rem 0 4rem 0;
   &__header {
     margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    border-bottom: 1px $hex-orange solid;
+    display: inline-block;
   }
   &__description {
     margin-bottom: 2.5rem;
@@ -44,7 +47,7 @@
   }
 }
 
-.project {
+.project-card {
   display: block;
   position: relative;
   padding-top: 100%;
