@@ -1,3 +1,13 @@
-@import '../../containers/portfolio/portfolio.component.scss';
 @import 'partials/_variables';
 
+.contact {
+  margin: 25rem 0;
+  text-align: center;
+  &__header {
+    font-size: 3rem;
+  }
+  &__emailto {
+    color: $hex-orange;
+    text-decoration: underline;
+  }
+}
