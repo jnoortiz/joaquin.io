@@ -1,0 +1,50 @@
+<!-- projects header & tags -->
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <div class="section section--center portfolio">
+        <h1 class="section__header portfolio__header">PROJECTS</h1>
+        <p class="portfolio__description">
+          I've been lucky enough to have been part of several teams composed of very talented
+          people from all over the world. You'll find projects here where I've taken an active role either as a front-end
+          dev or as a full-stack dev.
+        </p>
+        <ul class="skills">
+          <li class="skills__item" [ngClass]="getShowAllClass()" (click)="filterProjectsBySkills()">
+            <span class="skills__name">Show All&nbsp;</span>
+            <span class="skills__count">({{ projectsCount }})</span>
+          </li>
+          <li
+            class="skills__item"
+            [ngClass]="getSkillItemClass(skill)"
+            (click)="filterProjectsBySkills(skill)"
+            *ngFor="let skill of portfolio.skills"
+          >
+            <span class="skills__name">{{ skill.name }}&nbsp;</span>
+            <span class="skills__count">({{ skill.count }})</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- projects -->
+<div class="container">
+  <div class="row">
+    <ng-container *ngFor="let project of portfolio.projects">
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="project" [ngStyle]="{ 'background-color': project.thumb.bgColor }">
+          <img class="project__brand" [src]="project.thumb.brandUrl" />
+          <div class="project__overlay">
+            <div class="project__content">
+              <h1 class="project__name">{{ project.name }}</h1>
+              <h2 class="project__role">{{ project.role }}</h2>
+              <button class="btn project__button" (click)="openModal(project.id)">View Info</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>

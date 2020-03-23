@@ -8,7 +8,7 @@ body {
   font-family: $font-roboto;
   font-weight: 300;
   position: relative;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   &.body--modal-open {
     overflow-y: hidden;
   }
@@ -22,4 +22,27 @@ h5,
 h6 {
   font-family: $font-roboto;
   font-weight: 400;
+}
+
+/** used to override ngx-carousel **/
+.carousel-control {
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon {
+    background-color: rgba(0, 0, 0, 0.4);
+    background-size: 20px 20px;
+    height: 34px;
+    width: 24px;
+  }
+}
+
+.carousel-indicators {
+  li {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    &.active {
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  }
 }

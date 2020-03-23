@@ -26,7 +26,7 @@
 }
 
 .section {
-  margin: 5rem 0;
+  margin: 8rem 0;
   &__header {
     font-size: 2.5rem;
     border-bottom: 1px $hex-orange solid;
@@ -38,7 +38,7 @@
 }
 
 .about-me-card {
-  margin: 5rem auto;
+  margin: 3rem auto;
   max-width: 235px;
   &__icon {
     margin: 0;
@@ -50,71 +50,26 @@
 }
 
 .intro {
+  &__me {
+    overflow: hidden;
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 2rem;
+  }
   &__highlight {
     color: $hex-orange;
     white-space: nowrap;
   }
 }
 
-.project {
-  display: block;
-  position: relative;
-  padding-top: 100%;
-  margin-bottom: 20px;
-  &--filler {
-    background-color: #000000;
-  }
-  &__brand {
-    width: 50%;
-    height: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    cursor: none;
-  }
-  &__name {
-    font-weight: 400;
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  &__role {
-    font-size: 1.2rem;
-    font-weight: 400;
-    text-transform: uppercase;
-    margin-bottom: 3rem;
-  }
-  &__content {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  &__button {
-    color: #ffffff;
-    background-color: $hex-orange;
-    border-color: $hex-orange;
-    padding: 0 12px;
-    height: 30px;
-    line-height: 30px;
-  }
-  &__overlay {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #ffffffe6;
-    display: none;
-    box-sizing: border-box;
-  }
-  &:hover {
-    & .project__overlay {
-      display: block;
-    }
-  }
+.contact {
+
 }
 
+.footer {
+  background-color: rgba(0, 0, 0, 0.2);
+}
 /* Larger than 576px */
 @media (min-width: $bp-sm) {
   .header {

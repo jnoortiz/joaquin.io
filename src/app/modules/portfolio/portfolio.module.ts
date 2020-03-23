@@ -11,9 +11,12 @@ import { PortfolioService } from './services/portfolio.service';
 import { PortfolioComponent } from './containers/portfolio/portfolio.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { PortfolioModalComponent } from './components/portfolio-modal/portfolio-modal.component';
+import { ProjectsComponent } from './components/projects/projects.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
-  declarations: [PortfolioComponent, NavbarComponent, PortfolioModalComponent],
+  declarations: [PortfolioComponent, NavbarComponent, PortfolioModalComponent, ProjectsComponent, FooterComponent, ContactComponent],
   imports: [CommonModule, PortfolioRoutingModule, SharedModule, HttpClientModule, CarouselModule],
   providers: [PortfolioService]
 })

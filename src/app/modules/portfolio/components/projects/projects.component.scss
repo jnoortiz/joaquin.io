@@ -1,0 +1,104 @@
+@import '../../containers/portfolio/portfolio.component.scss';
+@import 'partials/_variables';
+
+.portfolio {
+  margin-bottom: 4rem;
+  &__header {
+    margin-bottom: 1.5rem;
+  }
+  &__description {
+    margin-bottom: 2.5rem;
+  }
+}
+
+.skills {
+  margin: 0;
+  &__item {
+    list-style: none;
+    display: inline-block;
+    padding: 0.75rem 1.75rem;
+    margin: 0 0.5rem;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    &.active {
+      border-color: rgba(0, 0, 0, 0.8);
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
+    }
+    &.inactive {
+      opacity: 0.3;
+      pointer-events: none;
+    }
+  }
+  &__name {
+    font-weight: 400;
+    vertical-align: middle;
+  }
+  &__count {
+    font-weight: 300;
+    font-size: 1.3rem;
+    opacity: 0.9;
+  }
+}
+
+.project {
+  display: block;
+  position: relative;
+  padding-top: 100%;
+  margin-bottom: 20px;
+  &--filler {
+    background-color: #000000;
+  }
+  &__brand {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: none;
+  }
+  &__name {
+    font-weight: 400;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  &__role {
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+  }
+  &__content {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__button {
+    color: #ffffff;
+    background-color: $hex-orange;
+    border-color: $hex-orange;
+    padding: 0 12px;
+    height: 30px;
+    line-height: 30px;
+  }
+  &__overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffffe6;
+    display: none;
+    box-sizing: border-box;
+  }
+  &:hover {
+    & .project__overlay {
+      display: block;
+    }
+  }
+}

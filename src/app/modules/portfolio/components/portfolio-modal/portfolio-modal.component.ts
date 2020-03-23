@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BsModalRef } from 'ngx-bootstrap/modal';
-import { Project } from '@shared/models/project.model';
+import { PortfolioProject } from '@shared/models/portfolio.model';
 
 @Component({
   selector: 'app-portfolio-modal',
@@ -8,7 +8,7 @@ import { Project } from '@shared/models/project.model';
   styleUrls: ['./portfolio-modal.component.scss']
 })
 export class PortfolioModalComponent implements OnInit {
-  project: Project;
+  project: PortfolioProject;
 
   constructor(public bsModalRef: BsModalRef) {}
 

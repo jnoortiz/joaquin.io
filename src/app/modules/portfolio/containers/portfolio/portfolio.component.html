@@ -23,11 +23,12 @@
   </div>
 </div>
 
-<!-- about me -->
+<!-- intro -->
 <div class="container">
   <div class="row">
     <div class="col-sm">
       <div class="section intro section--center">
+        <img class="intro__me" src="assets/images/me.jpg">
         <p>
           My name is Joaquin and I develop apps with performance in mind; no copy & paste
           programming here. I'm highly proficient in
@@ -38,7 +39,8 @@
     </div>
   </div>
 </div>
-<!-- about me icons -->
+
+<!-- about me cards -->
 <div class="container">
   <div class="row">
     <div class="col-sm-6 col-md-4">
@@ -103,109 +105,11 @@
   </div>
 </div>
 
-<!-- key skills -->
-<!-- <div class="container">
-    <div class="row">
-      <div class="twelve column">
-        <div class="section section--center skills">
-          <h5>Skills Table</h5>
-          <table class="u-full-width skills-table">
-            <tbody>
-              <tr>
-                <td class="skills-table__language">TypeScript</td>
-                <td>
-                  <ul>
-                    <li>Angular<span class="icon-star"></span></li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <td class="skills-table__language">Javascript</td>
-                <td>
-                  <ul>
-                    <li>Node.js <span class="icon-star"></span></li>
-                    <li>AngularJS</li>
-                    <li>ReactJS</li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <td class="skills-table__language">DB Administration</td>
-                <td>
-                  <ul>
-                    <li>MongoDB</li>
-                    <li>PL/SQL</li>
-                    <li>MySQL</li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <td class="skills-table__language">Python</td>
-                <td>
-                  <ul>
-                    <li>Flask</li>
-                    <li>Django</li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <td class="skills-table__language">PHP</td>
-                <td>
-                  <ul>
-                    <li>Codeigniter</li>
-                    <li>Laravel</li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <td class="skills-table__language">General</td>
-                <td>
-                  <ul>
-                    <li>HTML</li>
-                    <li>CSS <span class="icon-star"></span></li>
-                    <li>SCSS <span class="icon-star"></span></li>
-                    <li>Rest API <span class="icon-star"></span></li>
-                    <li>AGILE/SCRUM</li>
-                  </ul>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-      </div> -->
+<!-- projects -->
+<app-projects></app-projects>
 
-<!-- portfolio -->
-<div class="container">
-  <div class="row">
-    <div class="col-sm">
-      <div class="section section--center portfolio">
-        <h1 class="section__header">PROJECTS</h1>
-        <!-- <ul class="portfolio__tags">
-          <li>Show All</li>
-        </ul> -->
-      </div>
-    </div>
-  </div>
-</div>
+<!-- contact me -->
+<app-contact></app-contact>
 
-<!-- portfolio -->
-<div class="container">
-  <div class="row">
-    <ng-container *ngFor="let project of projects">
-      <div class="col-sm-6 col-md-4 col-lg-3">
-        <div class="project" [ngStyle]="{ 'background-color': project.thumb.bgColor }">
-          <img class="project__brand" [src]="project.thumb.brandUrl" />
-          <div class="project__overlay">
-            <div class="project__content">
-              <h1 class="project__name">{{ project.name }}</h1>
-              <h2 class="project__role">{{ project.role }}</h2>
-              <button class="btn project__button" (click)="openModal(project.id)">View Info</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </ng-container>
-  </div>
-</div>
+<!-- footer -->
+<app-footer></app-footer>
