@@ -8,7 +8,10 @@ export class PortfolioProject {
   name: string;
   role: string;
   skills: Array<string>;
-  description: string;
+  description: {
+    project: string;
+    job: string;
+  };
   url?: string;
   screenshotUrls: Array<string>;
   thumb: {

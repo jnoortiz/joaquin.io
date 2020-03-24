@@ -9,12 +9,21 @@
       </slide>
     </carousel>
   </div>
-  <div class="project__content">
-    <h1 class="project__name">{{ project.name }}</h1>
-    <p class="project__role">{{ project.role }}</p>
-    <ul class="project__tags">
-      <li *ngFor="let tag of project.skills">{{ tag }}</li>
-    </ul>
-    <p class="project__description">{{ project.description }}</p>
+  <div class="container project__content">
+    <div class="row">
+      <div class="col-sm-4">
+        <h1 class="project__name">{{ project.name }}</h1>
+        <p class="project__role">{{ project.role }}</p>
+        <ul class="project__skills">
+          <li *ngFor="let skill of project.skills">{{ skill }}</li>
+        </ul>
+      </div>
+      <div class="col-sm-8">
+        <h2 class="project__header">PROJECT</h2>
+        <p class="project__description" [innerHtml]="project.description.project"></p>
+        <h2 class="project__header mt-4">ROLE</h2>
+        <p class="project__description" [innerHtml]="project.description.job"></p>
+      </div>
+    </div>
   </div>
 </div>

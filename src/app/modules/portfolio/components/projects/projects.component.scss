@@ -16,6 +16,7 @@
 
 .skills {
   margin: 0;
+  padding: 0;
   &__item {
     list-style: none;
     display: inline-block;
@@ -50,8 +51,9 @@
 .project-card {
   display: block;
   position: relative;
-  padding-top: 100%;
-  margin-bottom: 20px;
+  margin: 0 auto 3rem;
+  padding-top: 80%;
+  width: 80%;
   &--filler {
     background-color: #000000;
   }
@@ -73,7 +75,7 @@
     font-size: 1.2rem;
     font-weight: 400;
     text-transform: uppercase;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
   &__content {
     text-align: center;
@@ -104,4 +106,24 @@
       display: block;
     }
   }
+}
+
+/* Larger than 576px */
+@media (min-width: $bp-sm) {
+  .project-card {
+    padding-top: 100%;
+    width: 100%;
+  }
+}
+
+/* Larger than 768px */
+@media (min-width: $bp-md) {
+}
+
+/* Larger than 992px */
+@media (min-width: $bp-lg) {
+}
+
+/* Larger than 1200px */
+@media (min-width: $bp-xl) {
 }

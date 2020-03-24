@@ -1,0 +1,133 @@
+[
+  {
+    "id": "1",
+    "name": "Dialtrackers",
+    "role": "Full-Stack",
+    "skills": ["Angular", "AngularJS", "Flask", "MongoDB", "Node.js", "SCSS" ],
+    "description": {
+      "project": "The main scope of Dialtrackers is to handle inbound calls routing, automated call distribution, lead forwarding (using an ivr workflow), and record calls.",
+      "job": "Originally, I worked as a front-end developer for Dialtrackers when it was using AngularJS for the frontend and two Flask applications to handle the backend. My role was strictly debugging and building new features for the AngularJS frontend. <br /> <br /> After two years, the project was restarted as an Angular/Node.js project. I rebuilt most of the features from AngularJS and one of the Flask applications to Angular/Node.js. I also reworked the remaining Flask server to be compatible with the new Angular/Node.js application."
+    },
+    "screenshotUrls": [
+      "assets/images/portfolio/dialtrackers/dashboard.png",
+      "assets/images/portfolio/dialtrackers/numbers-form.png",
+      "assets/images/portfolio/dialtrackers/numbers-list.png",
+      "assets/images/portfolio/dialtrackers/campaigns-form.png"
+    ],
+    "thumb": {
+      "brandUrl": "assets/images/portfolio/dialtrackers/logo.png",
+      "bgColor": "#4d8bff"
+    }
+  },
+  {
+    "id": "7",
+    "name": "Bevsight",
+    "role": "Full-Stack",
+    "description": {
+      "project": "Bevsight is a SaaS which is used to manage inventory, orders, and sales.",
+      "job": "I worked as a full-stack developer for Bevsight. I built new front-end features and resolved UI/UX issues. Due to the application architecture, I was also required to work on the backend to modify existing functions."
+    },
+    "skills": ["Native JS", "Node.js", "Jade", "SCSS"],
+    "screenshotUrls": [
+      "assets/images/portfolio/bevsight/1.png",
+      "assets/images/portfolio/bevsight/2.png",
+      "assets/images/portfolio/bevsight/3.png",
+      "assets/images/portfolio/bevsight/4.png"
+    ],
+    "thumb": {
+      "brandUrl": "assets/images/portfolio/bevsight/logo.png",
+      "bgColor": "#4ec4ff"
+    }
+  },
+  {
+    "id": "3",
+    "name": "Time Deposit Simulator & Offloading",
+    "role": "Full-Stack",
+    "description": {
+      "project": "This application was built to simulate and open a time deposit account with Banco Comafi. The simulator will show the earnings from opening a time deposit account. Then a wizard to create a time deposit account will be offered to the user.",
+      "job": "I designed the initial structure of the application based on the scope of the project. I designed and developed the simulator module. I built parts of the wizard module and coordinated with my team to allow for an easier integration between the two modules."
+    },
+    "skills": ["Angular", "SCSS"],
+    "screenshotUrls": [
+      "assets/images/portfolio/plazo/1.png",
+      "assets/images/portfolio/plazo/2.png",
+      "assets/images/portfolio/plazo/3.png"
+    ],
+    "thumb": {
+      "brandUrl": "assets/images/portfolio/plazo/logo.png",
+      "bgColor": "#614fa0"
+    }
+  },
+  {
+    "id": "2",
+    "name": "Banking Platform",
+    "role": "Front-End",
+    "description": {
+      "project": "Ofelia is a storefront",
+      "job": "test"
+    },
+    "skills": ["Angular", "SCSS"],
+    "screenshotUrls": [
+      "assets/images/portfolio/ofelia/ofelia.png",
+      "assets/images/portfolio/ofelia/ofelia2.png"
+    ],
+    "thumb": {
+      "brandUrl": "assets/images/portfolio/banking_platform/logo.png",
+      "bgColor": "#614fa0"
+    }
+  },
+  {
+    "id": "4",
+    "name": "Renta",
+    "role": "Front-End",
+    "description": {
+      "project": "Application designed to create real estate contracts online in a dynamic and simple way, with the same data entry errors are avoided, as the data entered are applied to the format of defined contract.",
+      "job": "test"
+    },
+    "skills": ["Angular"],
+    "screenshotUrls": [
+      "assets/images/portfolio/ofelia/ofelia.png",
+      "assets/images/portfolio/ofelia/ofelia2.png"
+    ],
+    "thumb": {
+      "brandUrl": "assets/images/portfolio/renta/logo.svg",
+      "bgColor": "#FF8948"
+    }
+  },
+  {
+    "id": "5",
+    "name": "El Mundo",
+    "role": "Front-End",
+    "description": {
+      "project": "Platform for the guidance of the best real estate proposals, interacting with different data sources to perform the search and comparison of investments.",
+      "job": "test"
+    },
+    "skills": ["Native JS"],
+    "screenshotUrls": [
+      "assets/images/portfolio/ofelia/ofelia.png",
+      "assets/images/portfolio/ofelia/ofelia2.png"
+    ],
+    "thumb": {
+      "brandUrl": "assets/images/portfolio/el_mundo/logo.svg",
+      "bgColor": "#c2ad98"
+    }
+  },
+  {
+    "id": "6",
+    "name": "Ofelia",
+    "role": "Front-End",
+    "description": {
+      "project": "Ofelia offers artisans an exclusive place to publish and sell their products digitally, thus reaching more people.",
+      "job": "test"
+    },
+    "skills": ["AngularJS", "CodeIgniter"],
+    "screenshotUrls": [
+      "assets/images/portfolio/ofelia/ofelia.png",
+      "assets/images/portfolio/ofelia/ofelia2.png"
+    ],
+    "thumb": {
+      "brandUrl": "assets/images/portfolio/ofelia/logo.svg",
+      "bgColor": "#fe3c61"
+    }
+  }
+]
