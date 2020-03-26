@@ -3,10 +3,10 @@
     "id": "1",
     "name": "Dialtrackers",
     "role": "Full-Stack",
-    "skills": ["Angular", "AngularJS", "Flask", "MongoDB", "Node.js", "SCSS" ],
+    "skills": ["Angular", "AngularJS", "Flask", "MongoDB", "Node.js"],
     "description": {
       "project": "The main scope of Dialtrackers is to handle inbound calls routing, automated call distribution, lead forwarding (using an ivr workflow), and record calls.",
-      "job": "Originally, I worked as a front-end developer for Dialtrackers when it was using AngularJS for the frontend and two Flask applications to handle the backend. My role was strictly debugging and building new features for the AngularJS frontend. <br /> <br /> After two years, the project was restarted as an Angular/Node.js project. I rebuilt most of the features from AngularJS and one of the Flask applications to Angular/Node.js. I also reworked the remaining Flask server to be compatible with the new Angular/Node.js application."
+      "job": "Originally, I worked as a front-end developer for Dialtrackers when it was using AngularJS for the frontend and two Flask applications to handle the backend. My role was strictly debugging and building new features for the AngularJS frontend. <br /> <br /> After two years, the project was restarted as an Angular/Node.js project. I rebuilt most of the features from AngularJS and one of the Flask applications to Angular/Node.js. I also reworked the remaining Flask server to be compatible with the succeeding Angular/Node.js application."
     },
     "screenshotUrls": [
       "assets/images/portfolio/dialtrackers/dashboard.png",
@@ -25,9 +25,9 @@
     "role": "Full-Stack",
     "description": {
       "project": "Bevsight is a SaaS which is used to manage inventory, orders, and sales.",
-      "job": "I worked as a full-stack developer for Bevsight. I built new front-end features and resolved UI/UX issues. Due to the application architecture, I was also required to work on the backend to modify existing functions."
+      "job": "I built front-end features and resolved UI/UX issues. Due to the application architecture, I was also required to work on the backend to modify existing functions."
     },
-    "skills": ["Native JS", "Node.js", "Jade", "SCSS"],
+    "skills": ["Native JS", "Node.js"],
     "screenshotUrls": [
       "assets/images/portfolio/bevsight/1.png",
       "assets/images/portfolio/bevsight/2.png",
@@ -47,7 +47,7 @@
       "project": "This application was built to simulate and open a time deposit account with Banco Comafi. The simulator will show the earnings from opening a time deposit account. Then a wizard to create a time deposit account will be offered to the user.",
       "job": "I designed the initial structure of the application based on the scope of the project. I designed and developed the simulator module. I built parts of the wizard module and coordinated with my team to allow for an easier integration between the two modules."
     },
-    "skills": ["Angular", "SCSS"],
+    "skills": ["Angular"],
     "screenshotUrls": [
       "assets/images/portfolio/plazo/1.png",
       "assets/images/portfolio/plazo/2.png",
@@ -63,13 +63,14 @@
     "name": "Banking Platform",
     "role": "Front-End",
     "description": {
-      "project": "Ofelia is a storefront",
-      "job": "test"
+      "project": "This application was built to automate several bank procedures which required filling out repetitive physical forms.",
+      "job": "I played a key role in designing the architecture of the application and coordinated with both the backend and the frontend team on how and where application logic should be placed. <br/><br/>Automating the bank processes within the scope of this application required over 45+ lazy-loaded modules. I designed and developed the authentication/user system and the initial form wizard modules (which later served as a structure/logic reference for a majority of the other modules)."
     },
-    "skills": ["Angular", "SCSS"],
+    "skills": ["Angular"],
     "screenshotUrls": [
-      "assets/images/portfolio/ofelia/ofelia.png",
-      "assets/images/portfolio/ofelia/ofelia2.png"
+      "assets/images/portfolio/banking_platform/1.png",
+      "assets/images/portfolio/banking_platform/2.png",
+      "assets/images/portfolio/banking_platform/3.png"
     ],
     "thumb": {
       "brandUrl": "assets/images/portfolio/banking_platform/logo.png",
@@ -81,13 +82,14 @@
     "name": "Renta",
     "role": "Front-End",
     "description": {
-      "project": "Application designed to create real estate contracts online in a dynamic and simple way, with the same data entry errors are avoided, as the data entered are applied to the format of defined contract.",
-      "job": "test"
+      "project": "This application was built to create real estate contracts with dynamic content.",
+      "job": "I built front-end features and resolved UI/UX issues."
     },
     "skills": ["Angular"],
     "screenshotUrls": [
-      "assets/images/portfolio/ofelia/ofelia.png",
-      "assets/images/portfolio/ofelia/ofelia2.png"
+      "assets/images/portfolio/renta/1.png",
+      "assets/images/portfolio/renta/2.png",
+      "assets/images/portfolio/renta/3.png"
     ],
     "thumb": {
       "brandUrl": "assets/images/portfolio/renta/logo.svg",
@@ -99,13 +101,12 @@
     "name": "El Mundo",
     "role": "Front-End",
     "description": {
-      "project": "Platform for the guidance of the best real estate proposals, interacting with different data sources to perform the search and comparison of investments.",
-      "job": "test"
+      "project": "This application is used to display real estate information in Spain.",
+      "job": "I designed and developed the front-end features which aggregated the information from various datapoints and placed them on a google maps overlay. I also resolved various UI/UX issues."
     },
     "skills": ["Native JS"],
     "screenshotUrls": [
-      "assets/images/portfolio/ofelia/ofelia.png",
-      "assets/images/portfolio/ofelia/ofelia2.png"
+      "assets/images/portfolio/el_mundo/1.png"
     ],
     "thumb": {
       "brandUrl": "assets/images/portfolio/el_mundo/logo.svg",
@@ -117,13 +118,14 @@
     "name": "Ofelia",
     "role": "Front-End",
     "description": {
-      "project": "Ofelia offers artisans an exclusive place to publish and sell their products digitally, thus reaching more people.",
-      "job": "test"
+      "project": "Ofelia is an online store for artisans.",
+      "job": "I developed front-end features and helped design the architecture of the application. The architecture of this application required us to use a reverse proxy to run codeigniter with AngularJS."
     },
     "skills": ["AngularJS", "CodeIgniter"],
     "screenshotUrls": [
-      "assets/images/portfolio/ofelia/ofelia.png",
-      "assets/images/portfolio/ofelia/ofelia2.png"
+      "assets/images/portfolio/ofelia/1.png",
+      "assets/images/portfolio/ofelia/2.png",
+      "assets/images/portfolio/ofelia/3.png"
     ],
     "thumb": {
       "brandUrl": "assets/images/portfolio/ofelia/logo.svg",
