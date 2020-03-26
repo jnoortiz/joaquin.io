@@ -3,7 +3,7 @@
     "id": "1",
     "name": "Dialtrackers",
     "role": "Full-Stack",
-    "skills": ["Angular", "AngularJS", "Flask", "MongoDB", "Node.js"],
+    "skills": ["Angular", "AngularJS", "Flask", "Node.js"],
     "description": {
       "project": "The main scope of Dialtrackers is to handle inbound calls routing, automated call distribution, lead forwarding (using an ivr workflow), and record calls.",
       "job": "Originally, I worked as a front-end developer for Dialtrackers when it was using AngularJS for the frontend and two Flask applications to handle the backend. My role was strictly debugging and building new features for the AngularJS frontend. <br /> <br /> After two years, the project was restarted as an Angular/Node.js project. I rebuilt most of the features from AngularJS and one of the Flask applications to Angular/Node.js. I also reworked the remaining Flask server to be compatible with the succeeding Angular/Node.js application."

@@ -30,7 +30,8 @@
             "styles": [
               "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/assets/vendor/fontello/css/fontello.css",
-              "src/assets/sass/styles.scss"
+              "src/assets/sass/styles.scss",
+              "src/.htaccess"
             ],
             "stylePreprocessorOptions": {
               "includePaths": [
