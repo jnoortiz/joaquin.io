@@ -25,13 +25,14 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+
+              "src/.htaccess"
             ],
             "styles": [
               "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/assets/vendor/fontello/css/fontello.css",
-              "src/assets/sass/styles.scss",
-              "src/.htaccess"
+              "src/assets/sass/styles.scss"
             ],
             "stylePreprocessorOptions": {
               "includePaths": [
