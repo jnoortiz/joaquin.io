@@ -129,11 +129,6 @@ __webpack_require__.r(__webpack_exports__);
 const routes = [
     {
         path: '',
-        redirectTo: 'portfolio',
-        pathMatch: 'full'
-    },
-    {
-        path: 'portfolio',
         loadChildren: () => __webpack_require__.e(/*! import() | modules-portfolio-portfolio-module */ "modules-portfolio-portfolio-module").then(__webpack_require__.bind(null, /*! ./modules/portfolio/portfolio.module */ "pZC5")).then(m => m.PortfolioModule)
     },
     {
