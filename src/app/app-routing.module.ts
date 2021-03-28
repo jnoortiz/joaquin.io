@@ -5,11 +5,6 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'portfolio',
-    pathMatch: 'full'
-  },
-  {
-    path: 'portfolio',
     loadChildren: () => import('./modules/portfolio/portfolio.module').then(m => m.PortfolioModule)
   },
   {
