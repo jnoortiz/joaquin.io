@@ -237,10 +237,6 @@
 
       var routes = [{
         path: '',
-        redirectTo: 'portfolio',
-        pathMatch: 'full'
-      }, {
-        path: 'portfolio',
         loadChildren: function loadChildren() {
           return __webpack_require__.e(
           /*! import() | modules-portfolio-portfolio-module */
